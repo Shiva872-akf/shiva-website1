@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Website with Images</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #3498db;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .feature {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .feature img {
+      width: 40px;
+      height: 40px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #27ae60;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+    }
+
+    .extra-image {
+      margin-top: 30px;
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Simple Website</h1>
+    <p>Clean. Fast. No backend needed.</p>
+    <img src="https://source.unsplash.com/800x300/?technology" alt="Tech Banner">
+  </header>
+
+  <section>
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="https://img.icons8.com/color/48/000000/easy.png" alt="Easy">
+        <span>✅ Easy to Use</span>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/color/48/000000/smartphone-tablet.png" alt="Responsive">
+        <span>✅ Fully Responsive</span>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="HTML CSS JS">
+        <span>✅ Pure HTML, CSS & JS</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Try Me</h2>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
+
+    <img class="extra-image" src="https://source.unsplash.com/600x300/?web,code" alt="Code Sample">
+  </section>
+
+  <footer>
+    &copy; 2025 SimpleSite
+  </footer>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent = "🎉 Hello there! Thanks for clicking.";
+    }
+  </script>
+</body>
+</html>
+
